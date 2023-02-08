@@ -1,0 +1,123 @@
+/* Moblie Style */
+@media (max-width: 500px) {
+  /* Tablet style for Banner Section */
+  .banner-img,
+  .banner {
+    width: 500px;
+  }
+
+  /* Tablet style for Nav-bar section */
+  .nav-name-item {
+    display: none;
+  }
+
+  .nav-item {
+    border: none;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+
+  /* Tablet style for About Section */
+  #about,
+  #target,
+  #personal-info {
+    width: 500px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Tablet style for Job-Info Section */
+  #job-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    width: 500px;
+  }
+
+  .job-grid-item {
+    width: 400px;
+  }
+
+  /* Change position of the Job-Grid-Item */
+  .education {
+    order: 5;
+  }
+
+  .skill {
+    order: 2;
+  }
+
+  .hobby {
+    order: 6;
+  }
+
+  .language {
+    order: 3;
+  }
+
+  .activity {
+    order: 4;
+  }
+
+  /* Tabletstyle for Cerfiticate Section */
+  #certificate {
+    width: 500px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .cer-grid-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .cer-grid-item {
+    border-right: none;
+  }
+
+  /* Tablet style for Project Section */
+  #project {
+    width: 500px;
+    padding: 20px;
+  }
+
+  .proj-grid-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 400px;
+  }
+
+  .proj-grid-item img,
+  .proj-grid-item {
+    width: 400px;
+  }
+
+  .proj-grid-item .proj-grid-title {
+    height: 30px;
+  }
+
+  .proj-grid-item .proj-grid-content {
+    height: 50px;
+  }
+
+  table {
+    height: 200px;
+  }
+
+  /* Tablet style for Footer Section */
+  #footer {
+    width: 500px;
+  }
+}

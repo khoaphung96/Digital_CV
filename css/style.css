@@ -1,0 +1,429 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.bg-grey {
+  background: rgb(247, 247, 247);
+}
+
+section {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+
+/* Style for Banner Section */
+.banner-img {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.banner-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-title {
+  margin-bottom: 10px;
+}
+
+/* Style for Nav-bar Section */
+#nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  height: auto;
+  width: 150px;
+  position: relative;
+  border-left: 1px solid rgb(0, 0, 0, 0.1);
+  border-right: 1px solid rgb(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-name-item {
+  flex-direction: column;
+}
+
+.nav-link,
+.nav-icon {
+  display: inline-block;
+}
+
+.nav-name-item {
+  width: 300px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-item i {
+  color: rgb(25, 156, 219);
+}
+
+/* Style for About Section */
+#about {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+#target,
+#personal-info {
+  width: 50%;
+  padding: 30px 50px;
+}
+
+#target p,
+#personal-info ul {
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+li span {
+  font-weight: bold;
+}
+
+.info li {
+  list-style: none;
+}
+
+.info-icon {
+  margin-top: 30px;
+}
+
+#target {
+  background-color: rgb(247, 247, 247);
+}
+
+#personal-info {
+  background-color: rgb(230, 230, 230);
+}
+
+.info-icon {
+  color: rgb(25, 156, 219);
+}
+
+/* Style for Job-Info Section */
+#job-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  width: 1090px;
+  justify-items: center;
+  margin: 30px auto;
+  padding: 0;
+  gap: 20px;
+}
+
+/* Change position of the Job-Grid-Item */
+.education {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.skill {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.hobby {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.language {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+/* Style for Job-Grid-Item */
+.job-grid-item {
+  display: grid;
+  grid-template-rows: 60px auto;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  width: 350px;
+}
+
+.job-grid-title {
+  display: flex;
+}
+
+.job-text-title {
+  width: 75%;
+}
+
+.job-text-title,
+.job-icon-title {
+  text-align: center;
+}
+
+.job-grid-content {
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Point Ladder */
+.html-point .point-1,
+.html-point .point-2,
+.html-point .point-3 {
+  background: rgb(25, 156, 219);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.js-point .point-1,
+.js-point .point-2 {
+  background: rgb(25, 156, 219);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.js-point .point-3 {
+  background: rgb(230, 230, 230);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.rea-point .point-1,
+.rea-point .point-2 {
+  background: rgb(25, 156, 219);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.rea-point .point-3 {
+  background: rgb(230, 230, 230);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.node-point .point-1 {
+  background: rgb(25, 156, 219);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.node-point .point-2,
+.node-point .point-3 {
+  background: rgb(230, 230, 230);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.eng-point .point-1,
+.eng-point .point-2 {
+  background: rgb(25, 156, 219);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.eng-point .point-3 {
+  background: rgb(230, 230, 230);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* Style for Hobbby */
+.ic-content-group {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 40px auto;
+  justify-items: center;
+}
+
+.ic-content-hobby {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(25, 156, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(25, 156, 219);
+}
+
+/* Style for Now */
+.now {
+  position: relative;
+}
+
+.style-now {
+  background-color: rgb(25, 156, 219);
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 70px;
+  padding: 0 5px;
+}
+
+/* Style for Cerfiticate Section */
+.cer-grid-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cer-grid-item {
+  display: flex;
+  padding: 30px 20px 30px 0;
+}
+
+.cer-grid-item img {
+  width: 200px;
+}
+
+.cer-grid-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.cer-grid-content {
+  padding-left: 20px;
+  padding-top: 20px;
+  line-height: 1.6;
+}
+
+.bor-item-1,
+.bor-item-2 {
+  border-bottom: 1px solid #d6c08d;
+}
+
+.bor-item-1 {
+  border-right: 1px solid #d6c08d;
+}
+
+/* Style for Project Section */
+.proj-grid-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1090px;
+  justify-items: center;
+  margin: 30px auto 0px;
+  padding: 0;
+  gap: 20px;
+}
+
+.proj-grid-item img {
+  width: 350px;
+}
+
+.proj-grid-title {
+  text-align: center;
+}
+
+.proj-grid-title,
+.proj-grid-content {
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  padding: 0 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.style-now-2 {
+  display: inline-block;
+  background-color: rgb(25, 156, 219);
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+table,
+tr {
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-collapse: collapse;
+}
+
+table {
+  height: 215px;
+}
+
+.col-width {
+  width: 100px;
+  padding: 10px;
+}
+
+.proj-icon-group {
+  display: flex;
+}
+
+.proj-icon-big-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Style for Footer Section */
+.foot-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.foot-item {
+  display: inline-block;
+  color: rgb(25, 156, 219);
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+#footer {
+  text-align: center;
+}
+
+/* Advanced Section */
+.nav-img-item {
+  position: absolute;
+}
+
+.nav-bar {
+  position: relative;
+}
+
+.nav-img-item img {
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}

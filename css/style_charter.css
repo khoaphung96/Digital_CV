@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+/* Create Grid  */
+body {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(auto, auto);
+  gap: 15px;
+  margin: 15px;
+}
+
+/* Style fo Grid Item */
+.goal,
+.team,
+.scopes,
+.primary,
+.timeline {
+  padding: 20px;
+  background-color: white;
+}
+
+/* Change Positon of Grid Item */
+.scopes {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.timeline {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+/* Stye for Title of Item */
+.goal-title,
+.team-title,
+.scopes-title,
+.primary-title,
+.timeline-title {
+  color: blue;
+  border-bottom: 1px solid black;
+}
+
+/* Style for Goal Section */
+.goal-flex-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.goal-flex-icon {
+  text-align: center;
+  padding: 0 50px;
+}
+
+/* Style for Team Section */
+.team-flex-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.team-flex-icon {
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Style for Scopes Section */
+.scopes-flex {
+  display: flex;
+}
+
+/* Style for Primary Section */
+.primary-flex-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.primary-flex-icon {
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Style for Timeline Section */
+.timeline-flex-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.timeline-flex-item:first-child {
+  padding-top: 0;
+}
+
+.timeline-flex-icon {
+  border: 1px solid black;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(138, 43, 226, 0.5);
+}
+
+.timeline-flex-group {
+  border-bottom: 1px dashed blue;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+/* Tablet Style */
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .goal-flex-item,
+  .scopes-flex,
+  .team-flex-item,
+  .primary-flex-item,
+  .timeline-flex-item {
+    flex-direction: column;
+  }
+
+  .team-flex-group,
+  .primary-flex-content {
+    align-self: start;
+  }
+
+  .timeline-flex-group {
+    border: none;
+  }
+
+  .timeline-flex-item {
+    border-bottom: 1px dashed blue;
+    align-items: start;
+  }
+}
+
+/* Mobile Style */
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
